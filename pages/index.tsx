@@ -3,6 +3,7 @@ import {YouTubeEmbed} from '@next/third-parties/google';
 import {Button} from "@/component/Button";
 import {Card} from "@/component/Card";
 import {Navbar} from "@/component/Navbar";
+import {Footer} from "@/component/Footer";
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
         <div className="flex-col">
             <div className="flex w-full flex-wrap justify-evenly bg-[#f5f5f5]">
                 <div className="w-100 m-10">
-                    <h1 className="text-5xl leading-14 font-bold w-90">
+                    <h1 className="text-4xl leading-10 lg:text-5xl lg:leading-14 font-bold lg:w-90">
                         Most important title on the page
                     </h1>
                     <div className="text-md w-full leading-5 mt-5">
@@ -24,7 +25,7 @@ function Home() {
                 </div>
             </div>
             <div className="flex-col justify-items-center">
-                <h2 className="text-5xl leading-14 font-bold mt-10 mb-10">
+                <h2 className="text-5xl leading-14 font-bold mt-10 mb-10 text-center">
                     Also very important title
                 </h2>
                 <div className="flex flex-wrap justify-center w-full">
@@ -41,6 +42,7 @@ function Home() {
                 <Button />
             </div>
         </div>
+        <Footer />
         {/*Body End*/}
     </div>
   )
