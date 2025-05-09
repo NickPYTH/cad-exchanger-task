@@ -10,7 +10,7 @@ function Home() {
     <div className="flex-col">
         <Navbar/>
         {/*Body Start*/}
-        <div className="flex-col">
+        <div className="flex-col min-h-screen">
             <div className="flex w-full flex-wrap justify-evenly bg-[#f5f5f5]">
                 <div className="w-100 m-10">
                     <h1 className="text-4xl leading-10 lg:text-5xl lg:leading-14 font-bold lg:w-90">
@@ -33,13 +33,13 @@ function Home() {
                         <Card />
                     ))}
                 </div>
-                <Button />
+                <Button path={'/contact_us'} />
             </div>
             <div className="flex-col justify-items-center bg-[#f5f5f5] pt-24 pb-12">
                 <h3 className="text-5xl font-bold">
                     Less important title
                 </h3>
-                <Button />
+                <Button path={'/contact_us'} />
             </div>
         </div>
         <Footer />
